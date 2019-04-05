@@ -14,34 +14,84 @@
             
             <header class="main-header">
                 <div id="logo">
-                    <!-- <div id="image">
-                        <h3>wow</h3>
-                    </div> -->
-                <img id="image" src="https://www.petmd.com/sites/default/files/petmd-kitten-development.jpg" alt="kitten"/>
+                    <h4>COOL<br>LOGO&trade;</h4>
                 </div>
                 <div class="headtitle">
-                    <h1>COOLEST QUIZ</h1></div>
-                
+                    <h1 id="site-title">COOLEST QUIZ !!!</h1>
+                </div>
             </header>
-            <aside class="box side space">
-                    <h3>wow</h3>
+            <aside class="side result-side">
+                    <h3 class="text" style="display:inline-block;" id="finalResult"></h3>
+                    <h2 style="display:inline-block;" id="result" class="text">0</h2>
+                    <h2 style="display:inline-block;" class="text">/</h2>
+                    <h2 style="display:inline-block;" id="amountOfQs" class="text">0</h2>
+                    <progress id="progress-bar"></progress>
             </aside>
             <div id="screen">
-                    <h1>what is the answer to this?</h1>
-                    <form>     
-                            <input name="answer" type="radio"/><p>answer</p><br>
-                            <input name="answer" type="radio"/><p>akhjjhnswer</p><br>
-                            <input name="answer" type="radio"/><p>answer</p><br>
-                            <input name="answer" type="radio"/><p>answer</p><br>
+                    <h1 class="text" id="question">Question will show up here!</h1>
+                    <form class="quiz-form quiz-answers">     
+                            <ul type="none">
+                            <li><input name="answer" type="radio" class="radio-input"/><p class="answers text">Answer</p></li>
+                            <li><input name="answer" type="radio" class="radio-input"/><p class="answers text">Answer</p></li>
+                            <li><input name="answer" type="radio" class="radio-input"/><p class="answers text">Answer</p></li>
+                            <li><input name="answer" type="radio" class="radio-input"/><p class="answers text">Answer</p></li>
+                             </ul>
+                             <input type="button" value="Next Question" id="next-button" class="btn">
                     </form>
                     
-                    <progress id="progress-bar"></progress>
+                    
             </div>
-            <aside class="side" id="menu">
-
+            <aside id="menu">
+               <form id="quiz-options">
+                <label for="category" class="label-text text">Category:</label>
+               <select id="category" selected="any">
+                <option value="any">Random category</option>
+                <option value="27">Animals</option>
+                <option value="31">Anime and Manga</option>
+                <option value="25">Art</option>
+                <option value="16">Board Games</option>
+                <option value="10">Books</option>
+                <option value="32">Cartoons and Animation</option>
+                <option value="26">Celebrities</option>
+                <option value="29">Comics</option>
+                <option value="18">Computers</option>
+                <option value="11">Film</option>
+                <option value="30">Gadgets</option>
+                <option value="9" >General Knowledge</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="19">Math</option>
+                <option value="12">Music</option>
+                <option value="13">Musicals and Theatre</option>
+                <option value="20">Mythology</option>
+                <option value="24">Politics</option>
+                <option value="17">Science and Nature</option>
+                <option value="21">Sports</option>
+                <option value="14">Television</option>
+                <option value="28">Vehicles</option>
+                <option value="15">Video Games</option>
+               </select><br>
+               <label for="numbers" class="label-text text">Number of questions:</label>
+               <input id="numbers" value=25 type="number" min=1 max=50><br>
+               <label for="difficulty" class="label-text text">Difficulty:</label>
+               <select id="difficulty">
+                   <option value="any">Random difficulty</option>
+                   <option value="easy">Easy</option>
+                   <option value="medium">Medium</option>
+                   <option value="hard">Hard</option>
+                   </select><br>
+                   <!-- <label id="type-label" class="menu-labels">Type of quiz:</label><br>
+                   <input class="type" type="radio" name="type">Random type</br>
+                   <input class="type" type="radio" name="type">True/False<br>
+                   <input class="type" type="radio" name="type">Multiple answers<br> -->
+               
+                </form>
+                <input id="submit-button" class="btn" type="button" value="Make quiz"/>
             </aside>
             <footer class="main-footer">
-            
+            <address>
+                @Daniella
+            </address>
         </footer>
         </div>
         
